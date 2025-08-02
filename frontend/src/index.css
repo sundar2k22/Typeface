@@ -1,0 +1,119 @@
+/* src/index.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f6;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.main-content {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.sidebar {
+  flex: 1 1 300px;
+}
+
+.content {
+  flex: 2 1 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-container, .list-container, .graphs-container {
+  padding: 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.form-container h3, .list-container h3, .graphs-container h3 {
+  margin-top: 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+.form-container div {
+  margin-bottom: 1rem;
+}
+
+.form-container label, .filter-controls label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-container input, .form-container select, .filter-controls select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.filter-controls {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+.charts-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.chart {
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fff;
+  text-align: center;
+}
